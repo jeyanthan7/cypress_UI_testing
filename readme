@@ -9,3 +9,182 @@ git checkout <branch>
 git branch ---> to check which branch
 
 
+git config --global user.email "jeyanthan7@gmail.com"
+
+PS F:\testing\cypress\cypress_UI_testing> git commit -m "updated readme"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+git commit -m "updated readme"
+
+PS F:\testing\cypress\cypress_UI_testing> git push origin localbranch
+Select an authentication method for 'https://github.com/':
+  1. Web browser (default)
+  2. Personal access token
+
+
+
+
+  ++++++++++++
+
+  PS F:\testing\cypress\cypress_UI_testing> git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+PS F:\testing\cypress\cypress_UI_testing> git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+PS F:\testing\cypress\cypress_UI_testing> git branch
+* localbranch
+  main
+PS F:\testing\cypress\cypress_UI_testing>
+PS F:\testing\cypress\cypress_UI_testing>
+PS F:\testing\cypress\cypress_UI_testing> git status
+On branch localbranch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS F:\testing\cypress\cypress_UI_testing> git status
+On branch localbranch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS F:\testing\cypress\cypress_UI_testing> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+PS F:\testing\cypress\cypress_UI_testing> git add .
+PS F:\testing\cypress\cypress_UI_testing> git commit -m "updated readme"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Muthu@jeyanthan.(none)')
+PS F:\testing\cypress\cypress_UI_testing> git status
+On branch localbranch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   readme
+
+PS F:\testing\cypress\cypress_UI_testing> git config --global user.email "jeyanthan7@gmail.com"
+PS F:\testing\cypress\cypress_UI_testing> git commit -m "updated readme"
+[localbranch e98bfe7] updated readme
+ 1 file changed, 6 insertions(+)
+PS F:\testing\cypress\cypress_UI_testing> git push cypress_UI_testing
+fatal: 'cypress_UI_testing' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS F:\testing\cypress\cypress_UI_testing> git status
+PS F:\testing\cypress\cypress_UI_testing> git remote add origin https://github.com/jeyanthan7/cypress_UI_testing.git
+error: remote origin already exists.
+PS F:\testing\cypress\cypress_UI_testing> git push origin localbranch
+Select an authentication method for 'https://github.com/':
+  1. Web browser (default)
+  2. Personal access token
+option (enter for default): 2
+Enter GitHub personal access token for 'https://github.com/'...
+Token:
+fatal: Response status code does not indicate success: 401 (Unauthorized).
+PS F:\testing\cypress\cypress_UI_testing> git push origin localbranch
+Select an authentication method for 'https://github.com/':
+  1. Web browser (default)
+  2. Personal access token
+option (enter for default): 1
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'localbranch' on GitHub by visiting:
+remote:      https://github.com/jeyanthan7/cypress_UI_testing/pull/new/localbranch
+remote:
+To https://github.com/jeyanthan7/cypress_UI_testing.git
+ * [new branch]      localbranch -> localbranch
+PS F:\testing\cypress\cypress_UI_testing>
