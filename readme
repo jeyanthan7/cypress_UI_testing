@@ -3,3 +3,9 @@ cypressUI testing
 cypress
 nodejs -> npm -> git -> visual studio code
 cmd prompt -> go to the path -> npm init -> npm install-> npm install --save-dev cypress
+
+visual studio code -> git check 
+git checkout <branch>
+git branch ---> to check which branch
+
+
