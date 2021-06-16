@@ -188,3 +188,18 @@ remote:
 To https://github.com/jeyanthan7/cypress_UI_testing.git
  * [new branch]      localbranch -> localbranch
 PS F:\testing\cypress\cypress_UI_testing>
+
+installed cypress 
+gitignore file in root path created
+++++++++++++
+sample.js has --> console.log ("first program");
+ node sample.js  or run start debugg or f5 button in visual studio code
+
+ +++++++++++++
+ added cypress.json --> constants added
+ in package.json -> scripts added e2e
+ sample js file placed in cypress->integration ->form.spec.js
+npx serve  ---> create a localhost with port number 5000 which will have a page
+in anohter terminal (as localhost page will be used we need to make it run)-> npm run e2e 
+
+
