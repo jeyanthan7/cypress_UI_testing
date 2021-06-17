@@ -202,4 +202,12 @@ sample.js has --> console.log ("first program");
 npx serve  ---> create a localhost with port number 5000 which will have a page
 in anohter terminal (as localhost page will be used we need to make it run)-> npm run e2e 
 
++++++++++++++
+
+./cypress/integraion folder spec files only cypress running automatocally.. if the js is outside this folder not able to run 
+
+
+to run a sigle file -- ./node_modules/.bin/cypress run --spec **/sample.spec.js
+to run all the files  -- ./node_modules/.bin/cypress run
+
 

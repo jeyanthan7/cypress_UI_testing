@@ -3,6 +3,7 @@ describe("Form test", () => {
       cy.visit("/");
       cy.get("form");
   
-      cy.get('input[name="name"]').type("Molly");
+      cy.get('input[name="q"]').type("India");
+      cy.get("form").submit();
     });
   });
