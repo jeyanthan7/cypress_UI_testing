@@ -1,11 +1,23 @@
 describe("Form test", () => {
-  it("Can fill the form", () => {
+  it("1.first - cypress test case", () => {
+    cy.visit("https://example.cypress.io");
+    //cy.get("form");
+    //cy.get('input[name="q"]').type("India");
+    //cy.get("form").submit();
+    cy.contains('type').click()
+    cy.url()
+    .should('include','commands/actions')
+
+  });
+  it("2.second google page", () => {
     cy.visit("https://www.google.com");
     cy.get("form");
-
     cy.get('input[name="q"]').type("India");
     cy.get("form").submit();
+
+
   });
+
 });
 
 // /// <reference types="Cypress" />
