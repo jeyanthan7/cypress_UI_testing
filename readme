@@ -211,3 +211,16 @@ to run a sigle file -- ./node_modules/.bin/cypress run --spec **/sample.spec.js
 to run all the files  -- ./node_modules/.bin/cypress run
 
 
+
+++++++++++++++
+
+installed mochawesome and mochawesone-merge for report..
+cypress.json was added with mochawsome details..
+
+run the single js script report automaticall generated 
+
+sample.spec.js has 2 cases
+
+./node_modules/.bin/cypress run --spec **/sample.spec.js
+
+file:///F:/testing/cypress/cypress_UI_testing/cypress/report/mochawesome-report/mochawesome.html

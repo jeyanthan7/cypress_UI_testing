@@ -1,7 +1,12 @@
 {
     
     "baseUrl": "https://www.google.com",
+    "reporter": "mochawesome",
     "reporterOptions" : {
+      "reportDir": "cypress/report/mochawesome-report",
+      "overwrite" : "true",
+      "html": "true",
+      "json":"true",
       "reporterEnabled" : "mochawesome"
     }
   }

@@ -20,7 +20,9 @@
   "homepage": "https://github.com/jeyanthan7/cypress_UI_testing#readme",
   "devDependencies": {
     "cypress": "^7.5.0",
-    "mocha": "^9.0.0"
+    "mocha": "^9.0.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0"
   },
   "dependencies": {
     "chai": "^4.3.4"
