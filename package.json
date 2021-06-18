@@ -6,7 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "e2e": "cypress open ",
-    "sample": "cypress open sample.js"
+    "sample": "cypress open sample.js",
+    "prestart": "npm install",
+    "cy-single-file-run": "npm run pretest &&  npm run cy-single & npm run posttest && npm run reporting  ",
+    "pretest": "npm run clean-reports-folder && npm run make-reports-folder",
+    "clean-reports-folder": "del-cli ./cypress/report/mochawesome-report",
+    "make-reports-folder": "make-dir ./cypress/report/mochawesome-report",
+    "cy-single": "echo 'executing...' %npm_config_cyspec% && npx cypress run  --headless --browser chrome --spec %npm_config_cyspec%",
+    "posttest": "npm run merge-reports && npm run generate-report",
+    "merge-reports": "npx mochawesome-merge ./cypress/report/mochawesome-report/*.json -o ./cypress/report/mochawesome-report/mochawesome.json",
+    "generate-report": "npx marge ./cypress/report/mochawesome-report/mochawesome.json -o ./cypress/report/mochawesome-report -t TestAutomationReport -f report -p AutomationReport -i true",
+    "reporting": "node ./utils/reporting/reporting.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +35,8 @@
     "mochawesome-merge": "^4.2.0"
   },
   "dependencies": {
-    "chai": "^4.3.4"
+    "chai": "^4.3.4",
+    "make-dir": "^3.1.0",
+    "nodemailer": "^6.6.1"
   }
 }
