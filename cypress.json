@@ -7,6 +7,6 @@
       "overwrite" : "true",
       "html": "true",
       "json":"true",
-      "reporterEnabled" : "mochawesome"
+      "timestamp":"mmddyyyy-HHMMss"
     }
   }

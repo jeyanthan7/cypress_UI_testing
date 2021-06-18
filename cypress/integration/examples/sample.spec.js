@@ -1,5 +1,5 @@
-describe("Form test", () => {
-  it("1.first - cypress test case", () => {
+describe("Cypress UI Automation test", () => {
+  it("Open cypress page and check link ", () => {
     cy.visit("https://example.cypress.io");
     //cy.get("form");
     //cy.get('input[name="q"]').type("India");
@@ -7,15 +7,12 @@ describe("Form test", () => {
     cy.contains('type').click()
     cy.url()
     .should('include','commands/actions')
-
   });
-  it("2.second google page", () => {
-    cy.visit("https://www.google.com");
+  it("Google page and type India", () => {
+    cy.visit("https://www.gle.com");
     cy.get("form");
     cy.get('input[name="q"]').type("India");
     cy.get("form").submit();
-
-
   });
 
 });

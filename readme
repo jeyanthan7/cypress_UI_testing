@@ -224,3 +224,12 @@ sample.spec.js has 2 cases
 ./node_modules/.bin/cypress run --spec **/sample.spec.js
 
 file:///F:/testing/cypress/cypress_UI_testing/cypress/report/mochawesome-report/mochawesome.html
+
++++++++++++++++++++
+config.js creation ---> email related details input
+emailshare files-> reporting.js,emailshare.js,customreport.js added.
+personal gmail id used.
+
+pre and post script run ---> added into package.json scripts
+email sent  -- checked positive and negative scenrrio
+++++++++
